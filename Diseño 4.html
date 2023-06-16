@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    </head>
+    <body>
+        <header>
+
+
+
+
+            <main>
+            <div class="encabezado">
+                <div class="logo">
+                    <img src="img/hectorcol1.jpg" alt="">
+                </div>
+                <section>
+                    <!--Este va a hacer el menu principal, el que aparece en la parte superior de la pnatalla-->
+                <div class="menuC">
+                    <nav>
+                        <li class="menuv"><a href="">ADMIN</a></li>
+                        <li class="menuv"><a href="">RECORDS</a></li>
+                        <li class="menuv"><a href="">INTERACT</a></li>
+                        <li class="menuv"><a href="">CALENDAR</a></li>
+                        <li class="menuv"><a href="">PROVIDERS</a></li>
+                        <li class="menuv"><a href="">SETTINGS</a></li>
+                    </nav>
+                </div>
+
+            </section>
+
+
+
+
+            <section>
+                <div class="logIn">
+                    <img src="img/hectocol.jpg" alt="">
+                     
+                    <select name="user" id="user">
+                        <option value="1" selected>hector</option>
+                        <option value="2" >david</option>
+                    </select>
+                     
+                </div>
+            </div>
+        </header>
+
+
+
+        <!--Este es el menu que aparece en el lateral -->
+        <aside class="contenido">
+            <nav class="menuLateral">
+                <li class="opLate">
+                    <div>
+                        <img src="img/clientes.png" alt="">
+                        <a href="">CLIENTES</a>
+                    </div>
+                    
+                </li>
+                <li class="opLate">
+                    <div>
+                        <img src="img/moni.png" alt="">
+                        <a href="">MONITORING</a>
+                    </div>
+                    
+                </li>
+                <li class="opLate">
+                    <div>
+                        <img src="img/repor.png" alt="">
+                        <a href="">REPORTING</a>
+                    </div>
+                </li>
+                <li class="opLate">
+                    <div>
+                        <img src="img/localizacion.png" alt="">
+                        <a href="">LOCATIONS</a>
+                    </div>
+                    
+                </li>
+                <li class="opLate">
+                    <div>
+                        <img src="img/log.png" alt="">
+                        <a href="">LOGS</a>
+                    </div>
+                    
+                </li>
+            </nav>
+        </section>
+
+
+
+
+<!--Este es el submenu que esta en el diseño -->
+        <section>
+            <main class="mainD">
+                
+                <div class="subMenu">
+                    <div class="sMenu1">
+                        <nav>
+                            <li><a href="">Alerts</a></li>
+                            <li><a href="">Task</a></li>
+                            <li><a href="">Risk</a></li>
+                            <li><a href="">Autorizations</a></li>
+                            <li><a href="">Vitals</a></li>   
+                        </nav>
+                    </div>
+                    <br>
+                    <div class="sMenu2">
+                        <nav>
+                            <li><a href="">resolve</a></li>
+                            <li><a href="">unresolve</a></li>
+                        </nav>
+                    </div>
+                </div>
+                
+
+
+
+                <!--En el siguiente bloque de codigo, es el formulario que aparece en la pantalla principal-->
+                <div class="mainContent">
+                    <div class="formulario">
+                        <form action="ejemplo.php" method="POST">
+                            <div class="cont1">
+                                <div class="cajasFormdiv">
+                                    <label for="fname">First name</label>
+                                    <br>
+                                    <input type="text" name="fname" id="fname" required placeholder="Nombre">
+                                </div>
+                                <div class="cajasFormdiv">
+                                    <label for="lname">Last name</label>
+                                    <br>
+                                    <input type="text" name="lname" id="lname" required placeholder="Apellido">
+                                </div>
+                                <div class="cajasFormdiv">
+                                    <label for="sdate">Start date</label>
+                                    <br>
+                                    <input type="date" name="sdate" id="sdate">
+                                </div>
+                                <div class="cajasFormdiv">
+                                    <label for="edate">End date</label>
+                                    <br>
+                                    <input type="date" name="edate" id="edate">
+                                </div>
+                            </div>
+                            <div class="cont2">
+                                <div class="cajasFormdiv1">
+                                    <label for="drange">Date Range</label>
+                                     
+                                    <div>
+                                        <a href="">1 day</a>
+                                        <a href="">3 days</a>
+                                        <a href="">30 days</a>
+                                        <a href="">ALL days</a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="cajasFormdiv">
+                                    <label for="select-l">Source</label>
+                                    <br>
+                                    <select name="select-l" style="width: 150px;">
+                                        <option value="value1">Select source </option>
+                                        <option value="value2" selected>Select source 2</option>
+                                        <option value="value3">Select source 3</option>
+                                      </select>
+                                </div>
+                                <div class="cajasFormdiv">
+                                    <a class="serch" href="">Search</a>
+                                     
+ 
+                                </div>
+                            </div>
+
+
+        
+
+
+
+
+
+
+                        <!--Aqui van los registros que nos van a aparecer en la pantalla de nuestra pagina principal-->
+                            <div class="cont3">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Date/ Time of alert</th>
+                                            <th>Client</th>
+                                            <th>Source</th>
+                                            <th>Value </th>
+                                            <th>Alert</th>
+                                            <th>Alert Type 6</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 08-01-2016 1:05</td>
+                                            <td> Jorchs</td>
+                                            <td> clinical pulse</td>
+                                            <td> N/A</td>
+                                            <td> Over 2 days</td>
+                                            <td> Time-based</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 08-01-2016 1:05</td>
+                                            <td> Jorchs 2</td>
+                                            <td> clinical pulse</td>
+                                            <td> N/A</td>
+                                            <td> Over 2 days</td>
+                                            <td> Time-based</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 08-01-2016 1:05</td>
+                                            <td> Jorchs 2</td>
+                                            <td> clinical pulse</td>
+                                            <td> N/A</td>
+                                            <td> Over 2 days</td>
+                                            <td> Time-based</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 08-01-2016 1:05</td>
+                                            <td> Jorchs 2</td>
+                                            <td> clinical pulse</td>
+                                            <td> N/A</td>
+                                            <td> Over 2 days</td>
+                                            <td> Time-based</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 08-01-2016 1:05</td>
+                                            <td> Jorchs 2</td>
+                                            <td> clinical pulse</td>
+                                            <td>N/A</td>
+                                            <td> Over 2 days</td>
+                                            <td> Time-based</td>
+
+                                            <!--Se cierran todas kas etiquetas que se abrieron y se termina el programa-->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </aside>
+    </main>
+
+    </body>
+</html>
